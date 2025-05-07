@@ -226,3 +226,25 @@ body {
     text-align: center;
     padding: 20px 0;
 }
+.creator-hub {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.creator-hub h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.creator-hub p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+.creator-hub .hub-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+}
+.creator-hub .hub-features li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
