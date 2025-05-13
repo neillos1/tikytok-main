@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Analysis Tool | TikToky</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>🎥 Video Analysis Tool</h1>
+      <p>Upload your TikTok video and get instant feedback on what can make it go viral.</p>
+    </div>
+  </header>
+
+  <section class="tool-section">
+    <div class="container">
+      <form class="upload-form">
+        <label for="videoUpload">Choose a TikTok video file:</label><br/>
+        <input type="file" id="videoUpload" accept="video/*" /><br/><br/>
+        <button class="cta-button" type="submit">Analyze My Video</button>
+      </form>
+
+      <div id="analysisResults" style="display:none; margin-top:40px;">
+        <h2>Results:</h2>
+        <p>📊 Engagement Score: <strong>87%</strong></p>
+        <p>🔥 Trend Match: <strong>High</strong></p>
+        <p>💡 Tip: Consider adding a hook in the first 3 seconds to grab more attention!</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 TikToky. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.querySelector('.upload-form');
+    const results = document.getElementById('analysisResults');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      results.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

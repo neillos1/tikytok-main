@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SocialSync - Pricing</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tokify - Pricing</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>SocialSync Pricing</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header style="padding: 20px; background-color: #1a1a1a; color: white;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <h1>Tokify</h1>
+      <nav>
+        <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0;">
+          <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+          <li><a href="features.html" style="color: white; text-decoration: none;">Features</a></li>
+          <li><a href="pricing.html" style="color: #ff3366; text-decoration: none; font-weight: bold;">Pricing</a></li>
+          <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="pricing">
-        <h2>Choose the Plan that Fits You Best</h2>
-        <div class="pricing-plan">
-            <h3>Standard Plan</h3>
-            <p>Price: &pound;10 per month</p>
-            <p>Basic social media analytics and insights.</p>
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing" style="background-color: #f9f9f9; padding: 60px 20px;">
+    <div class="container" style="max-width: 1100px; margin: 0 auto; text-align: center;">
+      <h2 style="font-size: 2.5rem; margin-bottom: 10px;">Start Free — Upgrade Anytime</h2>
+      <p style="margin-bottom: 40px; color: #666;">Enjoy a 7-day free trial. No commitment. Cancel anytime.</p>
+      
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        
+        <!-- Basic Tier -->
+        <div style="background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); padding: 30px; width: 300px;">
+          <h3 style="font-size: 1.5rem;">Basic</h3>
+          <p style="font-size: 2rem; margin: 10px 0;">£2.99 / mo</p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: #555;">
+            <li>1 Video Analysis / Week</li>
+            <li>Basic Growth Insights</li>
+            <li>Weekly Trend Tips</li>
+          </ul>
+          <a href="#" class="cta-button" style="padding: 12px 24px; display: inline-block;">Start Basic</a>
         </div>
-        <div class="pricing-plan">
-            <h3>Premium Plan</h3>
-            <p>Price: &pound;15 per month</p>
-            <p>Advanced analytics with more detailed insights and competitor comparisons.</p>
-        </div>
-        <div class="pricing-plan">
-            <h3>Pro Plan</h3>
-            <p>Price: &pound;20 per month</p>
-            <p>All features plus influencer tracking and customized reports.</p>
-        </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 SocialSync. All rights reserved.</p>
-    </footer>
+        <!-- Standard Tier -->
+        <div style="background: #fff; border: 2px solid #ff3366; border-radius: 12px; box-shadow: 0 4px 30px rgba(255,51,102,0.15); padding: 30px; width: 300px; transform: scale(1.05);">
+          <h3 style="font-size: 1.5rem;">Standard</h3>
+          <p style="font-size: 2rem; margin: 10px 0;">£5.99 / mo</p>
+          <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: #555;">
+            <li>Unlimited Video Analyses</li>
+            <li>Advanced Strategy Feedback</li>
+            <li>Priority Support & Updates</li>
+          </ul>
+          <a href="#" class="cta-button" style="padding: 12px 24px; display: inline-block;">Go Standard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background-color: #1a1a1a; color: white; text-align: center; padding: 20px;">
+    <p>&copy; 2025 Tokify. All rights reserved.</p>
+  </footer>
 </body>
 </html>

@@ -22,3 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
         slider.style.transform = `translateX(-${currentIndex * (100 / slider.children.length)}%)`;
     }, 5000); // Change slide every 5 seconds
 });
+// Load particle background
+particlesJS.load('particles-js', 'particles-config.json', function() {
+    console.log('Particles loaded.');
+  });
+  
