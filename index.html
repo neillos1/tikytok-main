@@ -8,18 +8,38 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .hero-gradient {
-      background: radial-gradient(circle at center, #ff4f8b 0%, #5e068d 80%, #2a0535 100%);
+  background: linear-gradient(-45deg, #ff4f8b, #5e06dd, #2a0853);
+  background-size: 400% 400%;
+  animation: swoosh 12s ease infinite;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+  
+    @keyframes swoosh {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
+  
     .glow-border {
       border: 1px solid #e91e63;
-      box-shadow: 0 0 15px rgba(233,30,99,0.5);
+      box-shadow: 0 0 15px rgba(233, 30, 99, 0.5);
     }
+  
     .tool-box {
       background-color: #111;
       border: 1px solid #ff66cc;
       box-shadow: 0 0 12px rgba(255, 105, 180, 0.3);
     }
   </style>
+  
 </head>
 <body class="bg-black text-white font-sans">
 
@@ -54,31 +74,102 @@
   <section class="hero-gradient text-center py-16 px-4 rounded-xl mx-6">
     <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Transform Your TikTok Content with GetViralEdge</h1>
     <p class="text-lg mb-6">Powerful tools to boost your TikTok growth and help you stand out from the crowd.</p>
-    <button class="bg-gradient-to-r from-pink-500 to-orange-400 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition">Boost Your TikTok Today</button>
+    <button class="bg-gradient-to-r from-pink-500 to-orange-400 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition border border-white/40">Boost Your TikTok Today</button>
+
   </section>
 
   <!-- Smart Video Analyser -->
   <section class="py-16 text-center bg-gradient-to-b from-black to-purple-950">
-    <div class="max-w-xl mx-auto p-6 bg-slate-900 glow-border rounded-xl">
+    <div class="max-w-xl mx-auto p-6 bg-slate-900 glow-border rounded-xl transform transition-transform duration-500 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]">
+
       <h2 class="text-xl font-semibold mb-2">Smart Video Analyser</h2>
       <p class="mb-4 text-sm">Upload your TikTok video and get instant feedback on how to improve your chances of going viral.</p>
-      <button class="bg-pink-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-600">Try Now</button>
-    </div>
+      <button class="bg-pink-500 text-white px-6 py-2 rounded-full font-semibold border border-white hover:bg-pink-600 transition">Try Now</button>
+
   </section>
 
   <!-- Tools Section -->
   <section class="px-4 py-12 bg-gradient-to-b from-purple-950 to-black">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">💪 <strong>Bio Generator</strong><br>Create stylish TikTok bios fast.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">💬 <strong>Caption Creator</strong><br>Hook your audience with powerful captions.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">🔍 <strong>Hashtag Optimizer</strong><br>Find trending niche hashtags.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">📈 <strong>Trend Prediction</strong><br>See what’s about to blow up.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">🧠 <strong>Content Ideas</strong><br>Fresh viral prompts daily.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">🎵 <strong>Sound Finder</strong><br>Top trending audio suggestions.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">✅ <strong>Boost Checklist</strong><br>Pro tips to improve reach.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
-      <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">📊 <strong>Success Tracker</strong><br>Track your growth and wins.<button class="mt-2 text-sm text-pink-400 hover:underline">Try Tool</button></div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      💪 <strong>Bio Generator</strong><br>Create stylish TikTok bios fast.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
     </div>
-  </section>
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      💬 <strong>Caption Creator</strong><br>
+      Write scroll-stopping captions.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
+    </div>
+    
+    
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      🔍 <strong>Hashtag Optimizer</strong><br>Find trending niche hashtags.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
+    </div>
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      📈 <strong>Trend Prediction</strong><br>See what’s about to blow up.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
+    </div>
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      🧠 <strong>Content Ideas</strong><br>Fresh viral prompts daily.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
+    </div>
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      🎵 <strong>Sound Finder</strong><br>Top trending audio suggestions.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
+    </div>
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      ✅ <strong>Boost Checklist</strong><br>Pro tips to improve reach.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
+    </div>
+    <div class="tool-box transform hover:scale-105 transition-transform duration-300 p-4 rounded-xl text-center">
+      📊 <strong>Success Tracker</strong><br>Track your growth and wins.
+      <button class="mt-4 px-4 py-2 bg-pink-500 text-white text-sm rounded-full border border-white hover:bg-pink-600 transition">Try Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Creator Hub Section -->
+<section class="py-16 px-4 text-center bg-gradient-to-b from-black via-black to-black">
+  <div class="relative mx-auto max-w-5xl p-10 rounded-2xl overflow-hidden border border-white/40 shadow-lg" style="background-image: url('creator-hub-banner.png'); background-position: center; background-size: cover; filter: brightness(1.7); min-height: 500px;">
+
+
+
+
+
+    <!-- Overlay for clarity -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 rounded-2xl z-0"></div>
+
+    <!-- Content with z-index -->
+    <div class="relative z-10">
+      <h2 class="text-3xl font-extrabold text-white mb-4">Creator Hub</h2>
+      <p class="text-white text-lg mb-10">Connect, share, and grow with our creator community features.</p>
+
+      <!-- Top Box -->
+      <div class="flex justify-center mb-6">
+        <div class="tool-box w-72 p-4 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
+          🎤 <strong>Community Forum</strong><br>Help, share tips, and support others.
+          <div><button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded-full border border-white hover:bg-pink-600 transition">Try Now</button></div>
+        </div>
+      </div>
+
+      <!-- Bottom Two Boxes -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center">
+        <div class="tool-box w-72 p-4 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
+          🏆 <strong>Monthly Challenges</strong><br>Win prizes and climb the ranks.
+          <div><button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded-full border border-white hover:bg-pink-600 transition">Try Now</button></div>
+        </div>
+        <div class="tool-box w-72 p-4 rounded-xl text-center transform hover:scale-105 transition-transform duration-300">
+          🌟 <strong>Success Stories</strong><br>Be featured when you go viral.
+          <div><button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded-full border border-white hover:bg-pink-600 transition">Try Now</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 </body>
 </html>
